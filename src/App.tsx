@@ -1,22 +1,30 @@
 import './App.scss';
+import books from './data/techBooksUnstructured.json';
 
 function App() {
-
-
-
-
-	let scores: (string | number)[] = [54334, 34233, 24242];
-
-	scores = [72832, 81723, "n/a", "none"];
-
-
-
-
-
 	return (
 		<div className="App">
 			<h1>TypeScript Data-Cleansing Example</h1>
-			<p>testing</p>
+			<h2>There are {books.length} books:</h2>
+			<div className="bookArea">
+				{books.map((item, i) => {
+					return (
+						<fieldset className="book" key={i}>
+							<legend>ID: {item.id}</legend>
+
+							<div className="row">
+								<label>Title</label>
+								<div>{item.title}</div>
+							</div>
+
+							<div className="row">
+								<label>Description</label>
+								<div>{item.description}</div>
+							</div>
+						</fieldset>
+					);
+				})}
+			</div>
 		</div>
 	);
 }
