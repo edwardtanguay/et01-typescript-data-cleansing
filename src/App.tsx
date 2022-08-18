@@ -2,13 +2,8 @@ import './App.scss';
 
 function App() {
 
-	let age: number = 20;
-	let name: string = "Jan";
-	let isOnline: boolean = false;
-
+	let age = 20;
 	age = "15";
-	name = 0;
-	isOnline = "true";
 
 
 
