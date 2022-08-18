@@ -2,7 +2,7 @@ import './App.scss';
 
 function App() {
 
-	let age = 20;
+	let age: number = 20;
 	age = "15";
 
 
