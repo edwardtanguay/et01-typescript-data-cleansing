@@ -21,6 +21,21 @@ function App() {
 								<label>Description</label>
 								<div>{item.description}</div>
 							</div>
+
+							<div className="row">
+								<label>Language</label>
+								<div>{item.language}</div>
+							</div>
+
+							<div className="row">
+								<label>Year/Month</label>
+								<div>{item.yearMonth}</div>
+							</div>
+
+							<div className="row">
+								<label>In Stock</label>
+								<div>{item.numberInStock}</div>
+							</div>
 						</fieldset>
 					);
 				})}
