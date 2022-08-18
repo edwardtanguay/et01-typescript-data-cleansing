@@ -2,8 +2,14 @@ import './App.scss';
 
 function App() {
 
-	let age: number = 20;
-	age = "15";
+
+
+
+	let scores: (string | number)[] = [54334, 34233, 24242];
+
+	scores = [72832, 81723, "n/a", "none"];
+
+
 
 
 
